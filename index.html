@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-r">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b7af183519.js" crossorigin="anonymous"></script>
+    <style>
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+        .anton-regular {
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
+        
+
+        
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body{
+            background-color: 	#FAEBD7;
+        }
+
+        article{
+            position: absolute;
+            top: 50%;
+            LEFT: 50%;
+            transform: translate(-50%,-50%);
+            width: 400px;
+            height: 450px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.197);
+        }
+
+        #imagem{
+            
+            padding-left: 40.5%;
+        }
+
+        #txt2{
+            text-align: center;
+            color: #8B4513;
+            margin: 0px;
+            margin-top: 80px;
+            font-size: 25px;
+            font-family: "Anton";
+        }
+
+        #txtacesse{
+            text-align: center;
+            color: #000000;
+            padding-top: 50px;
+            font-family: "Anton";
+        }
+
+        #dados{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            width: 250px;
+            margin: auto;
+            margin-top: 10px;
+            
+        }
+
+        #dados2{
+            margin-bottom: 10px;
+            border: none;
+            background-color: #e9d5c7;
+            padding: 5px;
+        }
+
+        .iconeform{
+            
+        }
+
+        footer{
+            color: 	#8B4513;    
+            padding-top: 460px;
+            text-align: center;
+        }
+
+        #btn{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            width: 100px;
+            background-color: white;
+            border-radius: 20px;
+            text-transform: uppercase;
+            font-size: 12px;
+            border: 1.5px solid #8B4513;  
+        }
+
+        #btn:hover{
+            background-color: #8B4513;
+            border: none;
+            border-radius: 20px;
+            text-transform: uppercase;
+            font-size: 12px;
+            padding: 1px;
+            color: white;
+            cursor: pointer;
+        }
+
+        #link{
+            text-align: center;
+            text-decoration: underline;
+            color: #8B4513;
+        }
+    </style>
+</head>
+<body id="bd" >
+    <header>
+        <div id="imagem" onclick="clicar()">
+            <img src="pessoas.png.png" alt="pessoas acenando" width="350px"
+            height="250px" >
+        </div>
+    </header>
+
+    <article>
+        <div id="txt2">
+            <p id="txt2">BEM VINDO</p>
+        </div>
+
+        <div id="txtacesse"> 
+            <p>crie sua conta:</p>
+        </div>
+
+        <div id="dados">
+            <label class="iconeform">
+                <i class="fa-solid fa-user" style="color: #8b4513;"></i>
+                <input type="text" placeholder="E-mail" minlength="5" id="dados2">
+            </label>
+            <label class="iconeform" for="">
+                <i class="fa-solid fa-lock" style="color: #8b4513;"></i>
+                <input type="text" placeholder="Senha" id="dados2">
+            </label>
+        </div>
+
+        <div id="btn">
+            <a href="pt2.html"><input type="button" value="Entrar" id="btn">
+                
+            </a> 
+        </div>
+
+        <div id="link">
+            <a href="pt2.html">
+                
+            </a>
+
+        </div>
+    </article>
+
+    <footer>
+        <p>
+            &copyfeferefe
+        </p>
+    </footer>
+
+    <script>
+    function clicar(){
+        var img = document.getElementById('imagem')
+
+        if ('click', img) {
+            window.alert('bem vindo')
+        } else{
+
+        }
+    }
+    
+    </script>
+</body>
+</html>
